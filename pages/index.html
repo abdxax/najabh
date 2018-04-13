@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewpower" content="width=device-width, initial-scale=1"><!-- thisi is very importent for responsive website -->
+
+	<!--Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/css.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css">
+	<!-- Font Awesom -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.4.0/css/bootstrap-flipped.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+</head>
+<body>
+<!-- Header -->
+<header class="headers">
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <!-- <a class="navbar-brand" href="#">Brand</a> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">بحث</button>
+      </form>
+      
+       <ul class="nav navbar-nav ">
+     <!-- <li> <img src="../images/logo.png" class="logo-nav text-center"></li>-->
+         <li><a href="#">الصفحة الرئيسية </a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">الدورات <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="#">تصنيف</a></li>-->
+          <li><a href="#">اعن نجابة </a></li>
+       
+      </ul>
+  
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<section class="header">
+	<div class="header-all">
+		<div class="container">
+			<div class="row">
+				<!--<div class="col-md-6 header-text">
+					<h3>نجابة </h3>
+					<p>دليلك لدورات تدريبية وتعليمية شاملة لكافة العلوم والمهارات
+قوي خبراتك ومهاراتك الان.
+</p>
+                  <div class="col-md-4 ">
+						<a href="#" class="btn btn-info log-but " data-toggle="modal" data-target="#Login">تسجيل الدخول </a>
+					       </div>
+					
+					<div class="col-md-4 ">
+						<a href="#" class="btn log-but anm" data-toggle="modal" data-target="#register">تسجبل </a>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="col-md-12">
+						<img src="../images/logo.png">
+					</div>
+				</div>-->
+
+        <div class="col-md-12 text-center">
+            <img src="../images/logo.png">
+        </div>
+			</div>
+		</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="text-center text-headers">
+            <p>دليلك لدورات تدريبية وتعليمية شاملة لكافة العلوم والمهارات
+قوي خبراتك ومهاراتك الان.
+</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-md-offset-4 log-marg">
+           <div class="col-md-4 ">
+            <a href="#" class="btn btn-info log-but " data-toggle="modal" data-target="#Login">تسجيل الدخول </a>
+                 </div>
+          
+          <div class="col-md-4 ">
+            <a href="#" class="btn log-but anm" data-toggle="modal" data-target="#register">تسجبل </a>
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+</section>
+</header>
+
+<!-- pop windo for Login -->
+<div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">تسجيل دخول </h4>
+      </div>
+      <div class="modal-body">
+        
+          <img src="../images/logo.png" width="150px" height="150px" class="center-block">
+            <form class="form-horizontal">
+             <div class="form-group">
+               <div class="col-md-8 col-md-offset-2">
+                  <input type="email" name="" placeholder="البريد الالكترواني " class="form-control">
+               </div>
+             </div>
+             <div class="form-group">
+               <div class="col-md-8 col-md-offset-2">
+                  <input type="password" name="" placeholder="الرقم السؤي" class="form-control">
+               </div>
+             </div>
+            </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">اغلاق</button>
+        <button type="button" class="btn btn-primary">تسجيل دخول </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- pop wimdo for register -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">تسجيل  </h4>
+      </div>
+      <div class="modal-body">
+        
+          <img src="../images/logo.png" width="150px" height="150px" class="center-block">
+            <form class="form-horizontal">
+              <div class="form-group">
+               <div class="col-md-8 col-md-offset-2">
+                  <input type="text" name="" placeholder="الاسم " class="form-control">
+               </div>
+             </div>
+             <div class="form-group">
+               <div class="col-md-8 col-md-offset-2">
+                  <input type="email" name="" placeholder="البريد الالكترواني " class="form-control">
+               </div>
+             </div>
+             <div class="form-group">
+              <div class="col-md-3">
+                <label>المهنه :</label>
+              </div>
+               <div class="col-md-3 col-md-offset-1">
+                <label>طالب</label>
+                  <input type="radio" name="p1" class="form-control">
+                  <label>مدرب</label>
+                   <input type="radio" name="p1" class="form-control">
+
+               </div>
+             </div>
+             <div class="form-group">
+               <div class="col-md-8 col-md-offset-2">
+                  <input type="password" name="" placeholder="الرقم السؤي" class="form-control">
+               </div>
+             </div>
+              <div class="form-group">
+               <div class="col-md-8 col-md-offset-2">
+                  <input type="password" name="" placeholder="اعد ادخال الرقم السؤي " class="form-control">
+               </div>
+             </div>
+            </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">اغلاق</button>
+        <button type="button" class="btn btn-primary">تسجيل </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Silder -->
+<section>
+ 
+<div class="col-md-12 text-center silder-text"><h2>الدورات </h2></div>
+<div class="col-md-10 col-md-offset-1">
+<div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+  <div class="carousel-inner">
+    <!--<div class="container">
+      <div class="row">-->
+        <div class="item active">
+      <div class="col-md-3 col-sm-6 col-xs-12"><a href="#">
+          <div class="panel panel-default">
+            <div class="panel-header">
+              <img src="../images/lecu1.jpg" alt="silder1" class="img-responsive">
+
+              
+            </div>
+            <div class="panel-body text-center">
+            
+                 <p> دورة ادارة المشاريع</p>
+                 <p>Ahmad</p>
+                 <p>عدد المقاعد :4</p>
+                 <div class="rank ">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                
+                <!-- <div><span>المدرب</span><p>احمد </p></div>-->
+              
+            </div>
+          </div>
+      </a></div>
+
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <a href="#">
+
+            <div class="panel panel-default">
+              <div class="panel-header">
+                 <img src="../images/lecu2.jpg" alt="silder1" class="img-responsive">
+              </div>
+              <div class="panel-body text-center">
+                 
+                 <p> دورة تعليم اكواد</p>
+                 <p>Ahmad</p>
+                 <p>عدد المقاعد :4</p>
+                 <div class="rank ">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              
+              </div>
+            </div>
+        </a></div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <a href="#">
+           <div class="panel panel-default">
+             <div class="panel-header">
+               <img src="../images/lecu3.jpg" alt="silder1" class="img-responsive">
+              
+             </div>
+             <div class="panel-body text-center">
+              
+                 <p> دورة تعلم اللغة اليابانية</p>
+                 <p>Ahmad</p>
+                 <p>عدد المقاعد :4</p>
+                 <div class="rank ">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+             
+             </div>
+           </div>
+        </a></div>
+<!--Anther silder -->
+
+    </div>
+
+
+
+    
+    <div class="item">
+  
+<div class="col-md-3 col-sm-6 col-xs-12">
+        <a href="#">
+           <div class="panel panel-default">
+             <div class="panel-header">
+               <img src="../images/lecu4.jpg" alt="silder1" class="img-responsive">
+              
+             </div>
+             <div class="panel-body text-center">
+              
+                 <p> الادب السردي</p>
+                 <p>Ahmad</p>
+                 <p>عدد المقاعد :4</p>
+                 <div class="rank ">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+             
+             </div>
+           </div>
+        </a></div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <a href="#">
+           <div class="panel panel-default">
+             <div class="panel-header">
+               <img src="../images/lecu5.jpg" alt="silder1" class="img-responsive">
+              
+             </div>
+             <div class="panel-body text-center">
+              
+                 <p>شرح حقوق العمل وواجبات العمال</p>
+                 <p>Ahmad</p>
+                 <p>عدد المقاعد :4</p>
+                 <div class="rank ">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+             
+             </div>
+           </div>
+        </a></div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <a href="course_deteles.html">
+           <div class="panel panel-default">
+             <div class="panel-header">
+               <img src="../images/lecu6.jpg" alt="silder1" class="img-responsive">
+              
+             </div>
+             <div class="panel-body text-center">
+              
+                 <p>كتابة التقارير الاعلامية</p>
+                 <p>Ahmad</p>
+                 <p>عدد المقاعد :4</p>
+                 <div class="rank ">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+             
+             </div>
+           </div>
+        </a></div>
+
+</div>
+
+      
+    </div>
+
+
+  
+  <a class="left carousel-control " href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+<!--</div>
+      </div>-->
+    </div>
+</div>
+
+</section>
+<!-- Section  for Unviersity -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-title">
+        <h2>شركاء النجاح</h2>
+      </div>
+      <div class="img-col">
+        <div class="col-md-8 text-center col-md-offset-2">
+          <img src="../images/kau.jpg" class="" width="250px" height="250px">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- advans part -->
+<!--<section class="ima-back">
+  <!--<div class="container">
+    <div class="row">
+      <div class="col-md-12 section-title text-center">
+        <h2>مزايا</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="icon-left">
+          <i class=" glyphicon glyphicon-comment"></i>
+        </div>
+        <div class="subject">
+          <h4>خدمة التواصل والمشاركة مع المدربين و ادارة الموقع.</h4>
+        </div>
+         <div class="icon-left">
+          <i class="glyphicon glyphicon-blackboard"></i>
+        </div>
+        <div class="subject">
+          <h4>امكانية تقييم الدورات التدريبية واضافة تعليق عليها.</h4>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="icon-right">
+          <i class="glyphicon glyphicon-bullhorn"></i>
+        </div>
+        <div class="subject">
+          <h4> الاعلان ومعرفة مدة وزمان ومكان الدورة التدريبية</h4>
+        </div>
+        <div class="icon-right">
+          <i class="fas fa-question"></i>
+        </div>
+        <div class="subject">
+          <h4>اتاحة تقديم الاستفسارات والأسئلة والإجابة عليها مباشرة من المدربين ة</h4>
+        </div>
+      </div>
+    </div>
+  </div>-->
+<div class="row">
+      <div class="col-md-12 section-title text-center">
+        <h2>مزايا</h2>
+      </div>
+    </div>
+  <section class="testimoials" style="margin-top: 20px; margin-bottom: 20px;" >
+    
+  <div class="testimoials-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 ">
+          <div id="carousel-testimoials" class="carousel slide" data-ride="carousel">
+            <!-- indicators -->
+            <ol class="carousel-indicators " style="padding-right: 160px">
+                         <li data-target="#carousel-testimoials" data-slide-to="0" class="active"></li>
+                         <li data-target="#carousel-testimoials" data-slide-to="1"></li>
+                         <li data-target="#carousel-testimoials" data-slide-to="2"></li>
+                         <li data-target="#carousel-testimoials" data-slide-to="3"></li>
+
+                        </ol>
+
+                        <!-- wrapper for slides -->
+                        <div class="carousel-inner">
+                          <!-- Add the first item -->
+                          <div class="item active text-center">
+                             <i class=" glyphicon glyphicon-comment" style="font-size: 80px; color: #129cf3;"></i>
+                            <div class="testimoials-caption text-center">
+                              <h2>خدمة التواصل والمشاركة مع المدربين و ادارة الموقع.</h2>
+                              
+                            </div>
+                          </div>
+
+                           <!-- Add the second item -->
+                          <div class="item  text-center">
+                           <i class="glyphicon glyphicon-blackboard" style="font-size: 80px; color: #129cf3;"></i>
+                            <div class="testimoials-caption text-center">
+                              <h2>امكانية تقييم الدورات التدريبية واضافة تعليق عليها.</h2>
+                              
+                            </div>
+                          </div>
+
+
+
+
+                          <!-- Add the Threeth item -->
+                          <div class="item  text-center">
+                            <i class="glyphicon glyphicon-bullhorn"  style="font-size: 80px; color: #129cf3;"></i>
+                            <div class="testimoials-caption text-center">
+                              <h2>لاعلان ومعرفة مدة وزمان ومكان الدورة التدريبية</h2>
+                              
+                            </div>
+                          </div>
+
+                          <div class="item  text-center">
+                           <i class="fas fa-question" style="font-size: 80px; color: #129cf3;"></i>
+                            <div class="testimoials-caption text-center">
+                              <h2>اتاحة تقديم الاستفسارات والأسئلة والإجابة عليها مباشرة من المدربين ة</h2>
+                            
+                            </div>
+                          </div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+                  </div>
+
+                       
+
+      </div>
+    </div>
+  </div>
+    
+  
+</section>
+  
+<!--</section>
+<!-- Contact us -->
+<section class="contactus">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title text-center">
+          <h2>تواصل معنا </h2>
+         
+        </div>
+        <div class="col-md-12">
+          <div class="text-center">
+             <p>نسعد بتواصلكم..</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <form class="cont">
+          <div class="col-md-6">
+            <input type="text" name="" placeholder="الاسم" class="form-control">
+          <input type="text" name="" placeholder="الايميل" class="form-control">
+          <input type="text" name="" placeholder="الموضوع" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <textarea class="form-control" rows="5" placeholder="الرساله"></textarea>
+          </div>
+         <div class="text-center">
+            <input type="submit" name="" class="btn btn-info btnm" value="ارسال">
+         </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 ">
+        <div class="links">
+           <h4><a href="contact.html">تواصل معنا </a></h4>
+        <h4><a href="question.html">اسئلة الشائعة </a></h4>
+        </div>
+       
+      </div>
+      <div class="col-md-4">
+        <div class="scoil">
+          <ul>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+             <li><a href="#"><i class="fab fa-snapchat"></i></a></li>
+             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+             <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4 flor">
+        <img src="../images/footor.png" class="img-responsive" width="250px" height="250px">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../js/custom.js"></script>
+
+</body>
+</html>
